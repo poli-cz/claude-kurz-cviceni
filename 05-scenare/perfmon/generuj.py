@@ -5,6 +5,10 @@ import csv
 import math
 import random
 from datetime import datetime, timedelta
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 random.seed(20261119)
 START = datetime(2026, 11, 14, 0, 0)

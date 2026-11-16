@@ -7,6 +7,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+
 parser = argparse.ArgumentParser()
 parser.add_argument("--repo", default=str(Path(__file__).parent / "vuln-notify"))
 repo = Path(parser.parse_args().repo).resolve()

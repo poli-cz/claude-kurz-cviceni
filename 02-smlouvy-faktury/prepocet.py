@@ -7,6 +7,10 @@ Parametry smlouvy 2026/017 jsou zapsané níže s čísly článků.
 import csv
 from datetime import date
 from pathlib import Path
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 HERE = Path(__file__).parent
 CENA_MESIC = 85_000        # čl. 6.1

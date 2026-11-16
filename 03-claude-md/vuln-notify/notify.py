@@ -3,6 +3,10 @@ import re
 from pathlib import Path
 
 from vuln_notify import affected_customers, load_inventory, read_advisory, render_notification
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(__file__).parent
 
