@@ -4,8 +4,8 @@ Vyberte si jeden ze tří scénářů. U všech platí stejný postup z 2. dne: 
 výsledek dává skript nebo test a poslední slovo má člověk. Všechna data ve složce jsou smyšlená.
 
 Před začátkem: čistá pracovní kopie (`git status`), Claude Code spuštěný ve složce `05-scenare`
-(u scénáře B ve složce `03-claude-md/vuln-notify`), režim oprávnění výchozí (agent se ptá před úpravou
-souborů a před příkazy). Příkazy v zadání fungují stejně v terminálu Windows i v bashi;
+(u scénáře B ve složce `03-claude-md/vuln-notify`), režim oprávnění Manual (nová session startuje v režimu auto,
+klávesami Shift+Tab přepněte do Manual, agent se pak ptá před úpravou souborů a před příkazy). Příkazy v zadání fungují stejně v terminálu Windows i v bashi;
 Python se na Windows spouští příkazem `python` nebo `py`, na macOS a Linuxu `python3`.
 
 ## Scénář A: oznámení o zranitelnostech
