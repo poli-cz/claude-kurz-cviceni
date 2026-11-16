@@ -24,4 +24,5 @@ Máte tabulku, ve které má každý řádek článek a citaci, tři řádky ov�
 - Zkontrolujte doklady z `faktury.md` proti výtahu `parametry-smlouvy.md` a výkazu `vykaz-prace-pentest.csv`. Najdete čtyři nesrovnalosti?
 - Nechte Clauda přepočítat smluvní pokutu kódem a porovnejte s vyúčtováním P-2026-0007.
 - V souboru `report-podklady-2026-07-10.csv` jeden součet nesedí. Nechte ho najít výpočtem.
+- V souboru `zakazky-delivery.csv` je stav pěti zakázek k 31. 10. 2026. Které z nich potřebují zásah, i když součet čerpání vypadá dobře?
 - Uložte své zadání jako Skill nebo jako pokyny Projectu a vyzkoušejte ho na jiné smlouvě.

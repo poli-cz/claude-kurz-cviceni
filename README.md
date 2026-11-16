@@ -6,7 +6,7 @@ objednatel Lesní družstvo Borovina, smlouva číslo 2026/017, pět zákazník�
 | složka | den a blok | co v ní je |
 |---|---|---|
 | `01-zadani` | 1. den, blok 2, cvičení C1 | smlouva o správě IT (Markdown, Word, PDF), zadání a hodnoticí mřížka |
-| `02-smlouvy-faktury` | 1. den, blok 5, cvičení C2 | faktury, výkaz práce, podklady k reportu, tři nabídky |
+| `02-smlouvy-faktury` | 1. den, blok 5, cvičení C2 | faktury, výkaz práce, podklady k reportu, stav zakázek, tři nabídky |
 | `03-claude-md` | 2. den, blok 7, cvičení C3 | repo `vuln-notify` (Python, pytest), zadání a kontrolní skript |
 | `04-mcp-inventar` | 2. den, bloky 10 a 11, ukázka | MCP server nad inventářem zákaznických prostředí |
 | `05-scenare` | 2. den, blok 13, cvičení C4 | oznámení o zranitelnostech, inventář, log z Performance Monitoru |

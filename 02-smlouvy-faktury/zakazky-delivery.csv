@@ -1,0 +1,6 @@
+zakazka;zakaznik;typ;rozpocet_hodin;vykazano_hodin;termin_predani;stav_od_vedouciho
+Z-2026-027;Alfa Energo;nasazení VPN brány;120;134;2026-11-14;podle plánu
+Z-2026-029;Banka Doubrava;audit konfigurace;60;22;2026-11-06;podle plánu
+Z-2026-031;Lesní družstvo Borovina;penetrační test;40;36;2026-10-30;předáno
+Z-2026-033;Nemocnice Javor;sken zranitelností;24;25;2026-10-24;čeká na zákazníka
+Z-2026-034;Strojírny Hron;školení správců;16;0;2026-12-03;nezahájeno

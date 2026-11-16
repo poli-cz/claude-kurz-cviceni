@@ -1,7 +1,7 @@
 """Přepočet všech čísel cvičení C2 a ukázek bloku 5 z podkladů (pro lektora).
 
 Spuštění: python prepocet.py
-Čte faktury.csv, vykaz-prace-pentest.csv a report-podklady-2026-07-10.csv ve stejné složce.
+Čte faktury.csv, vykaz-prace-pentest.csv, report-podklady-2026-07-10.csv a zakazky-delivery.csv ve stejné složce.
 Parametry smlouvy 2026/017 jsou zapsané níže s čísly článků.
 """
 import csv
@@ -69,6 +69,26 @@ for sloupec in [k for k in celkem if k != "mesic"]:
 trzby = soucty["trzby_pausal_kc"] + soucty["trzby_jednorazove_kc"]
 print("tržby celkem:", kc(trzby), "; podíl jednorázových", f"{soucty['trzby_jednorazove_kc'] / trzby:.1%}")
 print("říjen jednorázové:", mesice[-1]["trzby_jednorazove_kc"], "=", float(mesice[-1]["trzby_jednorazove_kc"]) / SAZBA_HOD, "hodin při sazbě", SAZBA_HOD)
+
+print("\n== Delivery, stav zakázek k 31. 10. 2026")
+DEN_REPORTU = date(2026, 10, 31)
+zakazky = nacti("zakazky-delivery.csv")
+rozpocet = vykazano = 0.0
+for z in zakazky:
+    r, v = float(z["rozpocet_hodin"]), float(z["vykazano_hodin"])
+    rozpocet += r
+    vykazano += v
+    termin = date.fromisoformat(z["termin_predani"])
+    hotovo = z["stav_od_vedouciho"] == "předáno"
+    poznamky = []
+    if v > r:
+        poznamky.append(f"přes rozpočet o {v - r:.0f} h")
+    if not hotovo and termin < DEN_REPORTU:
+        poznamky.append(f"{(DEN_REPORTU - termin).days} dnů po termínu")
+    if not hotovo and v <= r and 0 <= (termin - DEN_REPORTU).days <= 7:
+        poznamky.append(f"do termínu {(termin - DEN_REPORTU).days} dnů, zbývá {r - v:.0f} h")
+    print(z["zakazka"], z["zakaznik"], f"| {v:.0f} z {r:.0f} h = {v / r:.0%}", "| termín", termin, "| vedoucí:", z["stav_od_vedouciho"], "|", "; ".join(poznamky) or "bez zásahu")
+print(f"celkem {vykazano:.0f} z {rozpocet:.0f} h = {vykazano / rozpocet:.1%}")
 
 print("\n== Konec smlouvy při výpovědi doručené 20. 11. 2026 (čl. 8.2)")
 print("lhůta běží od 1. 12. 2026, tři měsíce, konec 28. 2. 2027; chybný výpočet od doručení dá 20. 2. 2027")
