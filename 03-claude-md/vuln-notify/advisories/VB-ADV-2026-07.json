@@ -1,0 +1,8 @@
+{
+  "id": "VB-ADV-2026-07",
+  "product": "Velden Backup Agent",
+  "severity": "High",
+  "title": "Zvýšení oprávnění ve službě aktualizací",
+  "affected": { "from": "12.0.0", "before": "12.0.9" },
+  "action": "Aktualizovat na verzi 12.0.9 nebo novější."
+}

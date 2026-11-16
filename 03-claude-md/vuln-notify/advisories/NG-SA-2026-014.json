@@ -1,0 +1,12 @@
+{
+  "id": "NG-SA-2026-014",
+  "product": "Northgate VPN Gateway",
+  "severity": "Critical",
+  "title": "Obejití ověření ve webovém portálu VPN",
+  "affectedRanges": [
+    { "from": "7.5.0", "before": "7.5.3" },
+    { "from": "7.4.0", "before": "7.4.6" },
+    { "from": "6.9.0", "before": "6.10.0" }
+  ],
+  "action": "Aktualizovat na verzi 7.5.3 nebo 7.4.6. Větev 6.9 je bez opravy, přejděte na 7.5.3. Do té doby vypnout webový portál na vnějších rozhraních."
+}

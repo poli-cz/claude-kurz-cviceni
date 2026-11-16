@@ -1,0 +1,1 @@
+{"type":"object","properties":{"produkt":{"type":"string"},"dotcene_verze":{"type":"string"},"opraveno_v":{"type":"string"},"cvss":{"type":"number"}},"required":["produkt","dotcene_verze","opraveno_v","cvss"]}

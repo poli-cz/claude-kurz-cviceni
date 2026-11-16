@@ -1,0 +1,8 @@
+Dobrý den,
+
+ve vašem prostředí {{Environment}} evidujeme produkt {{Product}} ve verzi {{Version}}, kterého se týká oznámení {{AdvisoryId}} ({{Severity}}): {{Title}}.
+
+Doporučený postup: {{Action}}
+
+S pozdravem
+bezpečnostní tým

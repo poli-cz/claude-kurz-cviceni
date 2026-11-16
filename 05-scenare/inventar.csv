@@ -1,0 +1,15 @@
+zakaznik,prostredi,produkt,verze,kontakt,kriticnost
+Alfa Energo,produkce,Northgate VPN Gateway,7.4.2,it-bezpecnost@alfa-energo.example,vysoka
+Alfa Energo,test,Northgate VPN Gateway,7.6.0,it-bezpecnost@alfa-energo.example,nizka
+Alfa Energo,produkce,Brightmail Secure Relay,3.9.1,posta@alfa-energo.example,stredni
+Banka Doubrava,produkce,Northgate VPN Gateway,7.5.1,soc@banka-doubrava.example,vysoka
+Banka Doubrava,produkce,Velden Backup Agent,12.0.4,soc@banka-doubrava.example,vysoka
+Banka Doubrava,zaloha,Velden Backup Agent,11.8.0,soc@banka-doubrava.example,stredni
+Mesto Lipany,produkce,Brightmail Secure Relay,4.1.0,informatika@lipany.example,stredni
+Mesto Lipany,produkce,Northgate VPN Gateway,6.9.8,informatika@lipany.example,vysoka
+Nemocnice Javor,produkce,Velden Backup Agent,12.1.0,spravci@nemocnice-javor.example,vysoka
+Nemocnice Javor,produkce,Brightmail Secure Relay,4.0.2,spravci@nemocnice-javor.example,vysoka
+Nemocnice Javor,test,Northgate VPN Gateway,7.5.3,spravci@nemocnice-javor.example,nizka
+Strojirny Hron,produkce,Northgate VPN Gateway,7.5.0,it@strojirny-hron.example,stredni
+Strojirny Hron,produkce,Velden Backup Agent,12.0.9,it@strojirny-hron.example,stredni
+Strojirny Hron,vyvoj,Brightmail Secure Relay,3.8.7,it@strojirny-hron.example,nizka

@@ -1,0 +1,28 @@
+name: kontrola
+on: [push, workflow_dispatch]
+jobs:
+  cviceni:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pytest "mcp==2.3.0"
+      - run: python -m pytest
+        working-directory: 03-claude-md/vuln-notify
+      - run: python zkontroluj.py
+        working-directory: 03-claude-md
+        continue-on-error: true
+      - run: python prepocet.py
+        working-directory: 02-smlouvy-faktury
+      - run: python reseni-lektor/sparuj.py
+        working-directory: 05-scenare
+      - run: python perfmon/generuj.py
+        working-directory: 05-scenare
+      - run: python -c "import ast,sys; ast.parse(open('server.py',encoding='utf-8').read()); import mcp; print('ok')"
+        working-directory: 04-mcp-inventar

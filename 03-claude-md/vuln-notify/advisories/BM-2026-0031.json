@@ -1,0 +1,11 @@
+{
+  "id": "BM-2026-0031",
+  "product": "Brightmail Secure Relay",
+  "severity": "Medium",
+  "title": "Vložení hlaviček přes zobrazované jméno odesílatele",
+  "affectedRanges": [
+    { "from": "3.0.0", "before": "3.9.4" },
+    { "from": "4.0.0", "before": "4.0.3" }
+  ],
+  "action": "Aktualizovat na verzi 3.9.4, 4.0.3 nebo novější."
+}

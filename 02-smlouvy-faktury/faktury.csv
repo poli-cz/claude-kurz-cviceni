@@ -1,0 +1,4 @@
+cislo;typ;datum_vystaveni;datum_splatnosti;polozka;mnozstvi;jednotka;cena_za_jednotku_kc;zaklad_kc;dph_kc;celkem_kc
+F-2026-0412;opakovana;2026-11-02;2026-11-16;Služby podle článku 3 smlouvy 2026/017, říjen 2026;1;měsíc;85000;85000;17850.00;102850.00
+F-2026-0431;viceprace;2026-11-05;2026-12-05;Penetrační test webové aplikace, vícepráce podle článku 6.2;38;hod;1450;55100;11571.00;66671.00
+P-2026-0007;pokuta;2026-11-06;2026-11-21;Smluvní pokuta za prodlení s úhradou F-2026-0388 (30 dnů);1;ks;1760.55;1760.55;0;1760.55
